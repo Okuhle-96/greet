@@ -1,3 +1,6 @@
+// creating an instance
+var greetInstanceFactory = greetFactoryFunction();
+
 // inputs
 var userInput = "";
 var languageSelected = "";
@@ -16,8 +19,7 @@ var count = document.querySelector('.count');
 var errors = document.querySelector('.error')
 var peopleGreeted = document.querySelector('.greeted');
 
-// creating an instance
-var greetInstanceFactory = greetFactoryFunction();
+
 
 if (localStorage['countUsers']) {
     numGreeted = Number(localStorage['countUsers']);
